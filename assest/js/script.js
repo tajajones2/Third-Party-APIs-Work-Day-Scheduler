@@ -10,5 +10,17 @@
 
 // step four: grabthe txt area value and store it in local storage 
 
+var timeBlocksArr=[9,10,11,12,13,14,15,16,17,18,19] // translate this time-blocks to miltary time 
 
+var currenthour= moment().hour()
+var currentDay= $("#currentDay") // kind of like document.quereySelector(#currentDay)
+console.log(currenthour)
+
+var systemTime=moment().format()("dddd, MMM Do")
+currentDay.text(systemTime) // kind of like currentDay.textContent=systemTime
+
+
+function displayTimeBlockColors(){
+   
+}
 
