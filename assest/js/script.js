@@ -11,9 +11,10 @@
 // step four: grabthe txt area value and store it in local storage 
 
 
-var timeBlocksArr=[9,10,11,12,13,14,15,16,17,] // translate this time-blocks to miltary time 
+var textAreaEl=[9,10,11,12,13,14,15,16,17,] // translate this time-blocks to miltary time 
+var textAreaEl = $("textarea")
 
-var currenthour= moment().hour()
+var currenthour= moment().hour("HH")
 
 var currentDay= $("#currentDay") // kind of like document.quereySelector(#currentDay)
 
@@ -23,18 +24,18 @@ currentDay.text(systemTime) // kind of like currentDay.textContent=systemTime
 console.log(currentDay)
 
 function displayTimeBlockColors(){
-    for(var i=0; i < timeBlocksArr.length;i++){
+    for(var i=0; i < textAreaEl.length;i++){
         //this would be past 
-        var currentTextEl = $("#" +timeBlocksArr[i])
+        var currentTextEl = $("#",textAreaEl[i])
 
-        if(currenthour>timeBlocksArr[i]){
+        if(currenthour>textAreaEl[i]){
           
-           currentTextEl.addClass("past")
+           currentTextEl.addClass("past")[i]
          }
-         else if(currenthour=== timeBlocksArr[i]){
+         else if(currenthour== textAreaEl[i]){
             currentTextEl.addClass("present")
          }
-         else if(currenthour < timeBlocksArr[i]){
+         else if(currenthour < textAreaEl[i]){
             currentTextEl.addClass("future") 
          }
     }
