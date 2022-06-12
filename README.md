@@ -16,14 +16,14 @@ Application GitHub URL submitted.
 GitHub repository that contains application code.
 
 <!-- <a href="https://tajajones2.github.io/Javascript_Password_Generator/">Click here for live link!</a> -->
-
+[Click Here for live link!](https://tajajones2.github.io/Web_Api-Code_Quiz/) 
     
 <!-- ![alt tag](./assets/images/javascript_password_screentshot.png) -->
     
 
 ## Credits
 
-I credit myself, Taja Jones, for completing a password generator via JavaScript.
+I credit myself, Taja Jones, for completing a work day scheduler using HTML, Bootstrap, CSS and JQuery. 
 
 ## License
 MIT License
