@@ -12,7 +12,14 @@
 // step four: grab the txt area value and store it in local storage
 
 var timeBlocksArr = [9, 10, 11, 12, 13, 14, 15, 16, 17]; // translate this time-blocks to miltary time
-// var textAreaEl = $("textarea")
+
+// create locate storage to grab text area value
+var textArea = []
+var storage = localStorage.getItem("text-block")
+var saveButton = $("saveBtn")
+
+//add event listenr for save button 
+// saveBtn.on("click", doSomething)
 
 var currenthour = moment().hour();
 var currentDay = $("#currentDay"); // kind of like document.quereySelector(#currentDay)
@@ -41,4 +48,13 @@ function displayTimeBlockColors() {
 
 displayTimeBlockColors()
 
+function doSomething() {
 
+}
+
+
+function saveStorage() {
+    var textAreaHour = JSON.stringify(textArea);
+  
+    localStorage.setItem("text-block", textAreaHour);
+}
