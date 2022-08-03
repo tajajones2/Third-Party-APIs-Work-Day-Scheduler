@@ -1,24 +1,32 @@
-# Third-Party-APIs-Work-Day-Scheduler
+# Third-Party APIs Work Day Scheduler
 
 ## Description
 
+AS AN employee with a busy schedule
+I WANT to add important events to a daily planner
+SO THAT I can manage my time effectively. This project will demonstrate creating a simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
 
 ## Usage 
 
+- GIVEN I am using a daily planner to create a schedule
+WHEN I open the planner THEN the current day is displayed at the top of the calendar.
 
-Application deployed at live URL.
+- WHEN I scroll down THEN I am presented with timeblocks for standard business hours.
 
-Application loads with no errors.
+- WHEN I view the timeblocks for that dayTHEN each timeblock is color coded to indicate whether it is in the past, present, or future.
 
-Application GitHub URL submitted.
+- WHEN I click into a timeblock THEN I can enter an event.
 
-GitHub repository that contains application code.
+- WHEN I click the save button for that timeblock THEN the text for that event is saved in local storage
 
-<!-- <a href="https://tajajones2.github.io/Javascript_Password_Generator/">Click here for live link!</a> -->
-[Click Here for live link!](https://tajajones2.github.io/Web_Api-Code_Quiz/) 
+- WHEN I refresh the page THEN the saved events persist.
+
+
+
+[Click Here for live link!](https://tajajones2.github.io/Third-Party-APIs-Work-Day-Scheduler/) 
     
-<!-- ![alt tag](./assets/images/javascript_password_screentshot.png) -->
+![alt tag](./images/Screenshot%202022-08-03%20144003.png)
     
 
 ## Credits
